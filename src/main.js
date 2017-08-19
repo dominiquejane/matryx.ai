@@ -7,6 +7,7 @@ import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'jquery/dist/jquery.min.js'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import VueCarousel from 'vue-carousel'
 
 Vue.config.productionTip = false
 
@@ -19,6 +20,7 @@ Vue.filter('two_digits', function (value) {
 })
 
 Vue.use(BootstrapVue)
+Vue.use(VueCarousel)
 
 /* eslint-disable no-new */
 new Vue({

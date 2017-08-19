@@ -3,9 +3,9 @@
     <div class="content-container content-container--small text-center" >
       <h2 class="text-color--bright-purple text--bold">What People are Saying</h2>
 
-      <b-carousel id="quote-carousel" indicators :interval="3000">
+      <carousel id="quote-carousel" indicators :interval="3000">
 
-      <b-carousel-slide>
+      <slide>
         <span style="font-size: 100px; line-height: .9em; opacity: 0.2; float: left; padding-left: 8px;">❝</span> 
         <p class="quote-text text-color--purple">
         Matryx gives the internet back to scientists.
@@ -14,9 +14,9 @@
           <span class="quote-author__name">Blockchain Enthusiast</span>
           <span class="quote-author__company">From Switzerland</span>
         </h3>
-      </b-carousel-slide>
+      </slide>
       
-      <b-carousel-slide >
+      <slide >
         <p class="quote-text text-color--purple">
           Proident aliqua exercitation incididunt nostrud irure eiusmod nulla aute pariatur.
         </p>
@@ -24,9 +24,9 @@
           <span class="quote-author__name">John Smith</span>
           <span class="quote-author__company">company name</span>
         </h3>
-      </b-carousel-slide>
+      </slide>
 
-    </b-carousel>
+    </carousel>
 
     </div>
   </section>
@@ -35,14 +35,18 @@
 <script>
 export default {
   name: 'Quotes',
-  methods: {
-    onSlide (slide) {
-      this.sliding = true
-    },
-    onSlid (slide) {
-      this.sliding = false
-    }
+  components: {
+    Caraousel,
+    Slide
   }
+  // methods: {
+  //   onSlide (slide) {
+  //     this.sliding = true
+  //   },
+  //   onSlid (slide) {
+  //     this.sliding = false
+  //   }
+  // }
 }
 </script>
 

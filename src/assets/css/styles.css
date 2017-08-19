@@ -177,6 +177,10 @@ button:hover {
   background-color: #80828D;
 }
 
+.bkg-color--lighter-grey {
+  background-color: #E6E8F1;
+}
+
 /*content container*/
 .content-container {
   width: 100%;

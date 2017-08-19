@@ -1,24 +1,26 @@
 <template lang="html">
-  <section class="bkg-color--purple">
-    <div class="content-container content-container--small" >
-      <h1 class="text-color--white">What People are Saying</h1>
+  <section class="bkg-color--lighter-grey">
+    <div class="content-container content-container--small text-center" >
+      <h2 class="text-color--bright-purple text--bold">What People are Saying</h2>
 
       <b-carousel id="quote-carousel" indicators :interval="3000">
 
       <b-carousel-slide>
-        <p class="quote-text text-color--white">
-          Mollit commodo in exercitation duis irure sit fugiat non consequat pariatur exercitation labore tempor nulla eu elit dolor.
+        <span style="font-size: 100px; line-height: .9em; opacity: 0.2; float: left; padding-left: 8px;">❝</span> 
+        <p class="quote-text text-color--purple">
+        Matryx gives the internet back to scientists.
         </p>
-        <h3 class="quote-author text-color--white">
-          <span class="quote-author__name">John Smith</span>
-          <span class="quote-author__company">company name</span>
+        <h3 class="quote-author text-color--purple">
+          <span class="quote-author__name">Blockchain Enthusiast</span>
+          <span class="quote-author__company">From Switzerland</span>
         </h3>
       </b-carousel-slide>
+      
       <b-carousel-slide >
-        <p class="quote-text text-color--white">
+        <p class="quote-text text-color--purple">
           Proident aliqua exercitation incididunt nostrud irure eiusmod nulla aute pariatur.
         </p>
-        <h3 class="quote-author text-color--white">
+        <h3 class="quote-author text-color--purple">
           <span class="quote-author__name">John Smith</span>
           <span class="quote-author__company">company name</span>
         </h3>
@@ -56,12 +58,31 @@ export default {
     max-width: 10px;
   }
 }
+
+.carousel-item {
+  position: relative;
+  display: table-caption;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100%;
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+  /*! -webkit-backface-visibility: hidden; */
+          /*! backface-visibility: hidden; */
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
 .quote-text {
   opacity: 0.7;
   font-style: italic;
+  font-size: 20px;
+  line-height: 35px;
 }
 .quote-author {
   float: right;
+  padding-bottom: 20px;
 
   &__name {
     font-weight: bold;

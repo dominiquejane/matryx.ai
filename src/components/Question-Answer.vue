@@ -1,11 +1,11 @@
 <template>
-  <div class="question-answer">
+  <div class="question-answer" itemscope itemtype="http://schema.org/Question">
     <b-btn class="faq__accordion__btn"
       block
       v-b-toggle="cssId"
       @click.prevent="changeRoute"
     >
-      <slot name="question" class="faq__accordion__question"></slot>
+      <slot name="question" class="faq__accordion__question" itemprop="text"></slot>
 
       <span class="accordion-toggle__circle"></span>
       <span class="accordion-toggle__plus icon-bar"></span>
@@ -18,8 +18,8 @@
       accordion="faq-accordion"
       :visible="visible"
     >
-      <b-card class="faq__accordion__card">
-        <slot name="answer"></slot>
+      <b-card class="faq__accordion__card" itemprop="answer" itemscope itemtype="http://schema.org/Answer">
+        <slot name="answer" itemprop="text"></slot>
       </b-card>
     </b-collapse>
   </div>

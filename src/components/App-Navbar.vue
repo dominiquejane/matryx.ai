@@ -1,10 +1,10 @@
 <template>
-  <div id="sub-nav" class="bkg-color--dark-blue-gradient" :class="{ 'mobile-hide' : isHome }">
+  <div id="sub-nav" class="bkg-color--dark-blue-gradient" :class="{ 'mobile-hide' : isHome }" itemscope itemtype="http://schema.org/SiteNavigationElement">
     <b-navbar toggleable toggle-breakpoint="sm" class="content-container content-container--xlarge">
       <b-nav-toggle target="sub-nav-toggle"></b-nav-toggle>
       <b-navbar-brand>
-        <a href="/" target="_self" class="navbar-brand">
-          <img src="../assets/images/Matryx-Mark-White.png" alt="Matryx">
+        <a href="/" target="_self" class="navbar-brand" itemprop="url">
+          <img src="../assets/images/Matryx-Mark-White.png" alt="Matryx" itemprop="logo">
         </a>
       </b-navbar-brand>
 
@@ -14,6 +14,7 @@
             aria-disabled="false"
             href="/"
             target="_self"
+            itemprop="url"
           >
             <span class="russian" v-if=" language === 'ru' ">
               ПРОДАЖА ТОКЕНОВ
@@ -29,6 +30,7 @@
             aria-disabled="false"
             href="/pre-sale"
             target="_self"
+            itemprop="url"
           >
             <span v-if=" language === 'ru' ">предпродажа</span>
             <span v-else-if=" language === 'ch' ">预售</span>
@@ -42,6 +44,7 @@
             aria-disabled="false"
             href="/faq/about/what-is-matryx"
             target="_self"
+            itemprop="url"
           >
             <span>FAQ</span>
           </b-nav-item>
@@ -50,6 +53,7 @@
             aria-disabled="false"
             href="/rewards"
             target="_self"
+            itemprop="url"
           >
             <span>REWARDS</span>
           </b-nav-item>
@@ -57,6 +61,7 @@
 
           <b-nav-item class="text-color--white"
             href="/press-kit"
+            itemprop="url"
           >
             <span v-if=" language === 'ru' ">для прессы</span>
             <span v-else-if=" language === 'ch' ">新闻报道</span>
@@ -69,6 +74,7 @@
             aria-disabled="false"
             href="mailto:team@matryx.ai?subject=Matryx Token Sale"
             target="_self"
+            itemprop="url"
           >
             <span v-if=" language === 'ru' ">контакты</span>
             <span v-else-if=" language === 'ch' ">联系人</span>
@@ -81,6 +87,7 @@
             aria-disabled="false"
             href="https://blog.matryx.ai/"
             target="_blank"
+            itemprop="url"
           >
             <span v-if=" language === 'ru' ">блог</span>
             <span v-else-if=" language === 'ch' ">博客</span>
@@ -97,8 +104,9 @@
             target="_blank"
             rel="noopener"
             @click="socialMediaClick('telegram', 'navbar')"
+            itemscope itemtype="http://schema.org/logo" itemprop="url"
           >
-            <img src="../assets/icons/icon-telegram.svg" alt="telegram">
+            <img src="../assets/icons/icon-telegram.svg" alt="telegram" itemprop="image">
           </b-nav-item>
           <b-nav-item class="social-icon"
             onclick="window.open( 'https://twitter.com/intent/follow?original_referer=http%3A%2F%2Flocalhost%3A8080%2F&ref_src=twsrc%5Etfw&region=follow_link&screen_name=matryx_ai&tw_p=followbutton', 'newwindow', 'width=400px,height=500'); return false;"
@@ -106,8 +114,9 @@
             target="_blank"
             rel="noopener"
             @click="socialMediaClick('twitter', 'navbar')"
+            itemscope itemtype="http://schema.org/logo" itemprop="url"
           >
-            <img src="../assets/icons/icon-twitter.png" alt="twitter">
+            <img src="../assets/icons/icon-twitter.png" alt="twitter" itemprop="image">
           </b-nav-item>
           <b-nav-item class="social-icon"
           href="https://www.facebook.com/matryxai/"
@@ -115,10 +124,11 @@
             target="_blank"
             rel="noopener"
             @click="socialMediaClick('facebook', 'navbar')"
+            itemscope itemtype="http://schema.org/logo" itemprop="url"
           >
-            <img src="../assets/icons/icon-facebook.png" alt="facebook">
+            <img src="../assets/icons/icon-facebook.png" alt="facebook" itemprop="image">
           </b-nav-item>
-          <b-nav-item class="nav-item-language" v-show="isHome">
+          <b-nav-item class="nav-item-language" v-show="isHome" itemscope itemtype="http://schema.org/Language">
             <b-form-select
               v-model="selectedLanguage"
               :options="languages"

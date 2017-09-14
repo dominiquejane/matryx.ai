@@ -1,9 +1,9 @@
 <template>
-  <div class="reward-social-item-rules">
-    <img class="reward-social-item-rules__img" :src="img">
+  <div class="reward-social-item-rules" itemscope itemtype="http://schema.org/ItemList">
+    <img class="reward-social-item-rules__img" :src="img" itemprop="image">
 
     <ul class="reward-social-item-rules__stakes">
-      <li v-for="rule in rules">
+      <li v-for="rule in rules" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
         {{ rule }}
       </li>
     </ul>

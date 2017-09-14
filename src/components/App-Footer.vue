@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer itemscope itemtype="http://schema.org/WPFooter">
     <CTA-Banner :lighterText="true"
       :footerBkg="true"
       :cta-location="bottomAndPage"
@@ -8,26 +8,61 @@
     </CTA-Banner>
 
     <div class="footer__social">
-      <a href="https://blog.matryx.ai/" target="_blank" @click="socialMediaClick('blog', 'footer')">
-        <img class="footer__social__icon" src="../assets/icons/medium.svg" alt="Blog">
+      <a href="https://blog.matryx.ai/"
+        target="_blank"
+        @click="socialMediaClick('blog', 'footer')"
+        itemscope itemtype="http://schema.org/URL"
+      >
+        <img class="footer__social__icon"
+          src="../assets/icons/medium.svg" alt="Blog"
+          itemscope itemtype="http://schema.org/logo"
+        >
       </a>
-      <a href="https://t.me/matryxai" target="_blank" @click="socialMediaClick('telegram', 'footer')">
-        <img class="footer__social__icon" src="../assets/icons/telegram.svg" alt="Telegram">
+      <a href="https://t.me/matryxai"
+        target="_blank"
+        @click="socialMediaClick('telegram', 'footer')"
+        itemscope itemtype="http://schema.org/URL"
+      >
+        <img class="footer__social__icon"
+          src="../assets/icons/telegram.svg" alt="Telegram"
+          itemscope itemtype="http://schema.org/logo"
+        >
       </a>
-      <a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Flocalhost%3A8080%2F&ref_src=twsrc%5Etfw&region=follow_link&screen_name=matryx_ai&tw_p=followbutton" target="_blank" @click="socialMediaClick('twitter', 'footer')">
-        <img class="footer__social__icon" src="../assets/icons/icon-twitter.gif" alt="Twitter">
+      <a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Flocalhost%3A8080%2F&ref_src=twsrc%5Etfw&region=follow_link&screen_name=matryx_ai&tw_p=followbutton"
+        target="_blank"
+        @click="socialMediaClick('twitter', 'footer')"
+        itemscope itemtype="http://schema.org/URL"
+      >
+        <img class="footer__social__icon"
+          src="../assets/icons/icon-twitter.gif" alt="Twitter"
+          itemscope itemtype="http://schema.org/logo"
+        >
       </a>
-      <a href="https://www.linkedin.com/company-beta/11238967/" target="_blank" @click="socialMediaClick('linkedin', 'footer')">
-      <img class="footer__social__icon" src="../assets/icons/icon-linkedin.png" alt="LinkedIn">
+      <a href="https://www.linkedin.com/company-beta/11238967/"
+        target="_blank"
+        @click="socialMediaClick('linkedin', 'footer')"
+        itemscope itemtype="http://schema.org/URL"
+      >
+        <img class="footer__social__icon"
+          src="../assets/icons/icon-linkedin.png" alt="LinkedIn"
+          itemscope itemtype="http://schema.org/logo"
+        >
       </a>
-      <a href="https://www.facebook.com/matryxai/" target="_blank" @click="socialMediaClick('facebook', 'footer')">
-        <img class="footer__social__icon" src="../assets/icons/icon-facebook.png" alt="Facebook">
+      <a href="https://www.facebook.com/matryxai/"
+        target="_blank"
+        @click="socialMediaClick('facebook', 'footer')"
+        itemscope itemtype="http://schema.org/URL"
+      >
+        <img class="footer__social__icon"
+          src="../assets/icons/icon-facebook.png" alt="Facebook"
+          itemscope itemtype="http://schema.org/logo"
+        >
       </a>
     </div>
 
     <div class="footer__legal">
-      <img src="../assets/images/Matryx-Logo-White-640px.png" alt="Logo">
-      <p class="font-size--small text-color--white"><a href="/privacy-policy.pdf">Privacy Policy</a></p>
+      <img src="../assets/images/Matryx-Logo-White-640px.png" alt="Logo" itemscope itemtype="http://schema.org/logo">
+      <p class="font-size--small text-color--white" itemscope itemtype="http://schema.org/DigitalDocument"><a href="/privacy-policy.pdf" itemprop="url">Privacy Policy</a></p>
       <p class="font-size--small text-color--white">
         &copy; 2017 All rights reserved.
       </p>

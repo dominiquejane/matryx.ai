@@ -1,8 +1,8 @@
 <template lang="html">
-  <div class="audited">
+  <div class="audited" itemscope itemtype="http://schema.org/logo">
     <h2>Audited by</h2>
-    <a href="https://tokenmarket.net/blog/matryx-token-and-token-sale-smart-contract-audit/" target="_blank">
-      <img src="../assets/icons/icon-tokenmarket-horizontal.png">
+    <a href="https://tokenmarket.net/blog/matryx-token-and-token-sale-smart-contract-audit/" target="_blank" itemprop="url">
+      <img src="../assets/icons/icon-tokenmarket-horizontal.png" itemprop="image">
     </a>
   </div>
 </template>

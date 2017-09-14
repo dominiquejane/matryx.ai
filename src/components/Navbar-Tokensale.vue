@@ -1,8 +1,8 @@
 <template>
-  <section class="navbar-tokensale" id="tokensale">
+  <section class="navbar-tokensale" id="tokensale" itemscope itemtype="http://schema.org/Event">
     <div class="token-bar content-container content-container--large">
       <div class="token-bar__scroll">
-        <div class="token-bar__section first" v-if="showPreSale">
+        <div class="token-bar__section first" v-if="showPreSale" itemprop="event" itemscope itemtype="http://schema.org/Event">
           <!-- GIVE TEXT A TEXT SHADOW -->
           <img src="../assets/icons/icon-lightning.png" alt="" >
           <p class="text-color--white" >
@@ -22,7 +22,7 @@
     				<span v-else> September 6, 2017</span>
           </p>
         </div>
-        <div class="token-bar__section first" v-if="showMainSale">
+        <div class="token-bar__section first" v-if="showMainSale" itemprop="event" itemscope itemtype="http://schema.org/Event">
           <span class="text-color--matryx-grey">
             <span v-if=" language === 'ru' ">60% будет продано | ПРОДАЖА СМАРТ-КОНТРАКТОВ ETH</span>
             <span v-else-if=" language === 'ch' ">60% 待售 | ETH 智能销售联系人</span>
@@ -32,9 +32,9 @@
             <span v-else>60% Of MTX Supply To Be Sold | ETH Smart Contract Sale</span>
           </span>
         </div>
-        <div class="token-bar__section second">
-          <img src="../assets/icons/icon-rocket.png" alt="">
-          <p class="text-color--white">
+        <div class="token-bar__section second" itemprop="event" itemscope itemtype="http://schema.org/Event">
+          <img src="../assets/icons/icon-rocket.png" alt="" itemprop="image">
+          <p class="text-color--white" itemprop="description">
             <span v-if=" language === 'ru' ">Запуск</span>
     				<span v-else-if=" language === 'ch' ">发行</span>
     				<span v-else-if=" language === 'ge' ">Start</span>
@@ -42,7 +42,7 @@
     				<span v-else-if=" language === 'ko' ">런칭</span>
     				<span v-else>Launch</span>
           </p>
-          <p class="text-color--matryx-lighter-blue">
+          <p class="text-color--matryx-lighter-blue" itemprop="startDate">
             <span v-if=" language === 'ru' ">13 сентября 2017 года</span>
     				<span v-else-if=" language === 'ch' ">2017 年 9 月 13 日</span>
     				<span v-else-if=" language === 'ge' ">13. September 2017</span>
@@ -51,10 +51,10 @@
     				<span v-else>September 13, 2017</span>
           </p>
         </div>
-        <div class="token-bar__section third">
-          <img src="../assets/icons/icon-matryx-token-blue.png" alt="">
-          <p class="text-color--white">314,159,265</p>
-          <p class="text-color--matryx-lighter-blue">
+        <div class="token-bar__section third" itemprop="event" itemscope itemtype="http://schema.org/Event">
+          <img src="../assets/icons/icon-matryx-token-blue.png" alt="" itemprop="image">
+          <p class="text-color--white" itemprop="description">314,159,265</p>
+          <p class="text-color--matryx-lighter-blue" itemprop="description">
             <span v-if=" language === 'ru' ">Всего доступно MTX</span>
     				<span v-else-if=" language === 'ch' ">可提供的 MTX 总量</span>
     				<span v-else-if=" language === 'ge' ">Verfügbarer MTX-Gesamtbetrag</span>
@@ -63,10 +63,10 @@
     				<span v-else>Total MTX Available</span>
           </p>
         </div>
-        <div class="token-bar__section fourth">
-          <img src="../assets/icons/icon-eth-token-blue.png" alt="">
-          <p class="text-color--white">161,803</p>
-          <p class="text-color--matryx-lighter-blue">
+        <div class="token-bar__section fourth" itemprop="event" itemscope itemtype="http://schema.org/Event">
+          <img src="../assets/icons/icon-eth-token-blue.png" alt="" itemprop="image">
+          <p class="text-color--white" itemprop="description">161,803</p>
+          <p class="text-color--matryx-lighter-blue" itemprop="description">
             <span v-if=" language === 'ru' ">Предел ETH</span>
     				<span v-else-if=" language === 'ch' ">ETH 上限</span>
     				<span v-else-if=" language === 'ge' ">ETH-Limit</span>
@@ -75,8 +75,8 @@
     				<span v-else>ETH Cap</span>
           </p>
         </div>
-        <div class="token-bar__section fifth">
-          <p>
+        <div class="token-bar__section fifth" itemprop="event" itemscope itemtype="http://schema.org/Event">
+          <p itemprop="description">
             <span class="text-color--matryx-grey" v-if="showPreSale">
               <span v-if=" language === 'ru' ">60% будет продано | ПРОДАЖА СМАРТ-КОНТРАКТОВ ETH</span>
       				<span v-else-if=" language === 'ch' ">60% 待售 | ETH 智能销售联系人</span>

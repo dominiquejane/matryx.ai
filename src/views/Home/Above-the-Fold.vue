@@ -15,6 +15,8 @@
           <span v-else>Join Our Token Sale</span>
         </h1>
 
+        <Counter :current="current" :total="total"></Counter>
+
         <div v-if="showMainSale">
           <p class="uppercase text-center text-color--matryx-blue" style="margin-bottom: -10px;" v-if="showMainSale">Ends in:</p>
           <Countdown v-if="showMainSale" end="October 13 2017 15:00:00 UTC" style="margin-top: 0px;"></Countdown>
@@ -84,6 +86,8 @@ import Video from '../../assets/media/giphy.mp4'
 import MatryxBtn from '@/components/Matryx-Btn'
 import ProgressBar from '@/components/Progress-Bar'
 
+import Counter from '@/components/Counter'
+
 import { isPreSale, isMainSale } from '@/utils'
 
 export default {
@@ -93,7 +97,8 @@ export default {
     Countdown,
     GetNotified,
     MatryxBtn,
-    ProgressBar
+    ProgressBar,
+    Counter
   },
 
   mounted () {
@@ -122,7 +127,9 @@ export default {
         Chinese: 'http://player.youku.com/embed/XMzAwNDA0MTQzNg=='
       },
       showPreSale: false,
-      showMainSale: false
+      showMainSale: false,
+      current: 2680,
+      total: 161803
     }
   },
 

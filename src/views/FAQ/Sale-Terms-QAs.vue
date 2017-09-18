@@ -1,20 +1,20 @@
 <template>
   <div id="saleterms-faq" class="faq__accordion">
     <QA cssId="what-are-the-saleterms">
-       <span slot="question">
+       <span slot="question"  itemscope itemtype="http://schema.org/Question" itemprop="name">
          What are the sale terms?
        </span>
-       <span slot="answer">
+       <span slot="answer" itemprop="suggestedAnswer acceptedAnswer text" itemscope itemtype="http://schema.org/Answer">
          Full token sale terms are available at
          <a href="/sale-terms.pdf" target="_blank">https://matryx.ai/sale-terms.pdf</a>
        </span>
      </QA>
 
      <QA cssId="where-is-the-matryx-team">
-      <span slot="question">
+      <span slot="question"  itemscope itemtype="http://schema.org/Question" itemprop="name">
         Where is the Matryx team?
       </span>
-      <span slot="answer">
+      <span slot="answer" itemprop="suggestedAnswer acceptedAnswer text" itemscope itemtype="http://schema.org/Answer">
         <p>The Matryx Team is based in San Diego, California. In accordance with the Matryx philosophy, the team collaborates with a variety of individuals across the globe.</p>
       </span>
     </QA>

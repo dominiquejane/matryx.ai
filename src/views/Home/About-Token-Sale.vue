@@ -1,7 +1,7 @@
 <template>
-  <section id="about-token-sale">
+  <section id="about-token-sale" itemscope itemtype="http://schema.org/AboutPage">
     <!-- I'm Dominique now.-->
-    <div class="content-container--large content-container">
+    <div class="content-container--large content-container" itemprop="title">
       <h2 class="section__header text--left">
         <span v-if=" language === 'ru' ">О нашей продаже токенов</span>
       	<span v-else-if=" language === 'ch' ">关于我们的代币销售</span>
@@ -13,7 +13,7 @@
       <div class="card-container--horizontal">
         <div class="about-container card-container--vertical">
           <div class="card">
-            <h4 class="text-color--matryx-black">
+            <h4 class="text-color--matryx-black" itemprop="about">
               <span v-if=" language === 'ru' ">Почему мы проводим продажу токенов</span>
             	<span v-else-if=" language === 'ch' ">我们为何拥有代币销售</span>
             	<span v-else-if=" language === 'ge' ">Warum wir einen Token-Verkauf durchführen</span>
@@ -21,7 +21,7 @@
             	<span v-else-if=" language === 'ko' ">저희가 토큰 판매를 하는 이유</span>
             	<span v-else>Why We're Having a Token Sale</span>
             </h4>
-            <p class="text-color--matryx-dark-grey">
+            <p class="text-color--matryx-dark-grey" itemprop="text">
               <span v-if=" language === 'ru' ">Конечная цель Matryx — стимулирование сотрудничества в областях знаний и создание аналога STEM. Для достижения этой цели нам необходимы ресурсы, которые помогут удовлетворить потребности исследований и разработок и создать сообщество участников и доноров. Продажи токенов быстро стали надежным способом достижения такого роста для технологий, основанных на блокчейне, таких как Matryx.
 </span>
             	<span v-else-if=" language === 'ch' ">Matryx平台的终极目标是在知识和创新领域激励合作。要达成这一目标，我们需要可支持研发需求、并有助于创建参与者和贡献者社区的资源。代币销售已迅速成为行之有效的手段，可实现Matryx等基于区块链技术的快速成长。</span>
@@ -32,7 +32,7 @@
             </p>
           </div>
           <div class="card">
-            <h4 class="text-color--matryx-black">
+            <h4 class="text-color--matryx-black" itemprop="about">
               <span v-if=" language === 'ru' ">Как Matryx использует блокчейн</span>
             	<span v-else-if=" language === 'ch' ">Matryx 如何使用区块链</span>
             	<span v-else-if=" language === 'ge' ">So nutzt Matryx die Blockchain</span>
@@ -40,7 +40,7 @@
             	<span v-else-if=" language === 'ko' ">Matryx가 블록체인을 활용하는 방법</span>
             	<span v-else>How Matryx Uses the Blockchain</span>
             </h4>
-            <p class="text-color--matryx-dark-grey">
+            <p class="text-color--matryx-dark-grey" itemprop="text">
               <span v-if=" language === 'ru' ">Используя вознаграждения, основанные на блокчейне, Matryx позволяет пользователям подтверждать вклад каждого участника в разработку решения и вознаграждать его с помощью токенов MTX. Использование токена позволяет нам использовать системы смарт-контрактов, выполнять обновления с течением времени и адаптировать платформу к потребностям пользователей.</span>
             	<span v-else-if=" language === 'ch' ">Matryx 利用基于区块链的赏金，使用户能够验证每位参与者对所有解决方案的贡献度，并用 MTX 代币奖励他们。使用代币使我们能够利用智能合同制度、随时升级、并且灵活地塑造平台以满足用户需求。</span>
             	<span v-else-if=" language === 'ge' ">Mit Hilfe blockchainbasierter Belohnungen ermöglicht es Matryx seinen Nutzern, den Beitrag jedes Teilnehmers zu einer bestimmten Lösung zu validieren und die Person mit MTX-Tokens zu belohnen. Die Nutzung eines Tokens erlaubt es uns, Smart-Contract-Systeme wirksam einzusetzen und mit der Zeit Aufwertungen durchzuführen. Zudem liefert sie uns die nötige Flexibilität, um die Plattform entsprechend den Bedürfnissen der Nutzer zu gestalten.</span>
@@ -50,7 +50,7 @@
             </p>
           </div>
           <div class="card">
-            <h4 class="text-color--matryx-black">
+            <h4 class="text-color--matryx-black" itemprop="about">
               <span v-if=" language === 'ru' ">Преимущества блокчейна</span>
             	<span v-else-if=" language === 'ch' ">区块链益处</span>
             	<span v-else-if=" language === 'ge' ">Vorteile der Blockchain</span>
@@ -58,7 +58,7 @@
             	<span v-else-if=" language === 'ko' ">블록체인의 이점</span>
             	<span v-else>Benefits of the Blockchain</span>
             </h4>
-            <p class="text-color--matryx-dark-grey">
+            <p class="text-color--matryx-dark-grey"itemprop="text">
               <span v-if=" language === 'ru' ">Смарт-контракты снижают затраты на отслеживание и вознаграждение соавторов. Победители каждого раунда конкурса для выдачи вознаграждения получают награды, и создается новое поколение «дочерних» решений. Все итерации управляются контрактами турнира. Происхождение идеи или работы можно легко отследить, и за них можно выплатить справедливое и публичное вознаграждение.</span>
             	<span v-else-if=" language === 'ch' ">智能合同减少了追踪和奖励贡献者的阻力。在每一轮的赏金竞争中，贡献者都会获得奖励，新一代问题也会诞生。所有迭代均由智能合同管理。某个创意或答案的起源可以被轻而易取地追寻到，而且可以公平、公开地被赋予相应奖励。</span>
             	<span v-else-if=" language === 'ge' ">Smart Contracts reduzieren die Friktion, die durch Nachverfolgung und Vergütung der Mitwirkenden entsteht. In jeder Runde eines Bounty-Wettbewerbs werden die Sieger belohnt und eine neue Kindergeneration wird erzeugt. Alle Iterationen werden durch die Turnierverträge verwaltet. Der Ursprung einer Idee oder Arbeit kann mühelos nachverfolgt sowie fair und öffentlich belohnt werden.</span>

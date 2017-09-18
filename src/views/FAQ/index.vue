@@ -1,5 +1,5 @@
 <template>
-<div id="faq-page" class="body-content content-container content-container--large">
+<div id="faq-page" class="body-content content-container content-container--large" itemscope itemtype="http://schema.org/QAPage">
   <h1 class="font-">Frequently Asked Questions</h1>
   <aside class="faq-menu">
     <ul class="faq-menu__list">

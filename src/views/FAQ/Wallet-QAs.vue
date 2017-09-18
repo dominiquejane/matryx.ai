@@ -1,10 +1,10 @@
 <template>
   <div id="wallet-faq" class="faq__accordion">
     <QA cssId="why-use-a-blockchain">
-      <span slot="question">
+      <span slot="question"  itemscope itemtype="http://schema.org/Question" itemprop="name">
         Why use a blockchain?
       </span>
-      <p slot="answer">
+      <p slot="answer" itemprop="suggestedAnswer acceptedAnswer text" itemscope itemtype="http://schema.org/Answer">
         Blah blah blah<br><br>blahblahbalhba
       </p>
     </QA>

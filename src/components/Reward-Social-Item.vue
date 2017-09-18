@@ -1,16 +1,16 @@
 <template>
-  <div class="reward-social-item">
-    <img class="reward-social-item__img" :src="src">
+  <div class="reward-social-item" itemscope itemtype="http://schema.org/ItemList">
+    <img class="reward-social-item__img" :src="src" itemprop="image">
     <div class="reward-social-item__label text-center">
-      <h5 class="reward-social-item__name uppercase">{{ name }}</h5>
+      <h5 class="reward-social-item__name uppercase" itemprop="name">{{ name }}</h5>
       <small>up to </small>
       <h5>{{ maxMTX }} MTX</h5>
     </div>
 
-    <img :src="img" alt="" class="reward-social-item__progress-bar">
+    <img :src="img" alt="" class="reward-social-item__progress-bar" itemprop="image">
 
-    <ul class="reward-social-item__stakes">
-      <li v-for="stake in stakes">
+    <ul class="reward-social-item__stakes" itemprop="itemListOrder" itemscope itemtype="http://schema.org/ItemListOrderUnordered">
+      <li v-for="stake in stakes" itemprop="itemListElement">
         {{ stake }}
       </li>
     </ul>

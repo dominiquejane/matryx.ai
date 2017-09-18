@@ -1,10 +1,10 @@
 <template>
   <div id="presale-faq" class="faq__accordion">
     <QA cssId="how-can-I-participate-in-the-presale">
-      <span slot="question">
+      <span slot="question"  itemscope itemtype="http://schema.org/Question" itemprop="name">
         How can I participate in the pre-sale?
       </span>
-      <p slot="answer">
+      <p slot="answer" itemprop="suggestedAnswer acceptedAnswer text" itemscope itemtype="http://schema.org/Answer">
         The MTX pre-sale is open to participants who wish to make a purchase of <b>75 ETH or more</b>. Pre-sale-specific communications will begin Thursday, August 24 with the smart contract opening on <b>Wednesday, September 6.</b>
         <br/><br/>
         To make sure you receive relevant communication regarding the pre-sale, please fill out the survey after signing up, and be sure to indicate an intended purchase amount of 75 ETH or more. Feel free to take the survey again and update your answer if needed.
@@ -12,10 +12,10 @@
     </QA>
 
     <QA cssId="what-discounts-are-available">
-      <span slot="question">
+      <span slot="question"  itemscope itemtype="http://schema.org/Question" itemprop="name">
         What discounts are available?
       </span>
-      <div slot="answer">
+      <div slot="answer" itemprop="suggestedAnswer acceptedAnswer text" itemscope itemtype="http://schema.org/Answer">
         <p>During the pre-sale there will be two discount tiers available:</p>
         <ul class="discount-list">
           <li><p><b>10% discount for purchases between 150-300 ETH</b></p></li>
@@ -28,37 +28,37 @@
     </QA>
 
     <QA cssId="what-is-the-minimum-purchase-for-pre-sale">
-      <span slot="question">
+      <span slot="question"  itemscope itemtype="http://schema.org/Question" itemprop="name">
         What is the minimum purchase for pre-sale?
       </span>
-      <p slot="answer">
+      <p slot="answer" itemprop="suggestedAnswer acceptedAnswer text" itemscope itemtype="http://schema.org/Answer">
         The minimum purchase amount to participate in the pre-sale is <b>75 ETH.</b>
       </p>
     </QA>
 
     <QA cssId="what-do-I-need-to-do-to-receive-my-tokens">
-      <span slot="question">
+      <span slot="question"  itemscope itemtype="http://schema.org/Question" itemprop="name">
         What do I need to do to receive my tokens?
       </span>
-      <p slot="answer">
+      <p slot="answer" itemprop="suggestedAnswer acceptedAnswer text" itemscope itemtype="http://schema.org/Answer">
         You will need to broadcast a transaction to a specific contract when the pre-sale opens. The Matryx Team will send an email with specific instructions as the date approaches.
       </p>
     </QA>
 
     <QA cssId="how-can-I-monitor-my-tokens-before-the-public-sale-date?">
-      <span slot="question">
+      <span slot="question"  itemscope itemtype="http://schema.org/Question" itemprop="name">
         How can I monitor my tokens before the public sale date?
       </span>
-      <p slot="answer">
+      <p slot="answer" itemprop="suggestedAnswer acceptedAnswer text" itemscope itemtype="http://schema.org/Answer">
         The Matryx team will share an Etherscan link with you to view details of your transaction and smart contract.
       </p>
     </QA>
 
     <QA cssId="can-I-change-my-receiving-address-before-the-public-sale-date">
-      <span slot="question">
+      <span slot="question"  itemscope itemtype="http://schema.org/Question" itemprop="name">
         Can I change my receiving address before the public sale date?
       </span>
-      <p slot="answer">
+      <p slot="answer" itemprop="suggestedAnswer acceptedAnswer text" itemscope itemtype="http://schema.org/Answer">
         Unfortunately, ERC20 transactions are irreversible. The Matryx Team is unable to change your receiving address once the transaction has been sent.
       </p>
     </QA>
@@ -81,7 +81,7 @@ export default {
 
 <!--
 <QA cssId="why-use-a-blockchain">
-  <span slot="question">
+  <span slot="question"  itemscope itemtype="http://schema.org/Question">
     Why use a blockchain?
   </span>
   <p slot="answer">

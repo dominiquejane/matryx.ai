@@ -1,19 +1,19 @@
 <template>
-  <section class="team-member member">
-    <img class="team-member__img member__img" :src="src" :alt="alt">
+  <section class="team-member member" itemscope itemtype="http://schema.org/Person">
+    <img class="team-member__img member__img" :src="src" :alt="alt" itemprop="image">
 
-    <div class="team-member__name">{{ name }}</div>
+    <div class="team-member__name" itemprop="name">{{ name }}</div>
 
-    <div class="team-member__title member__title"> {{ title }} </div>
+    <div class="team-member__title member__title" itemprop="jobTitle"> {{ title }} </div>
 
     <div class="team-member__social-icons">
-      <a :href="linkedInLink" target="_blank" v-show="linkedInLink">
+      <a :href="linkedInLink" target="_blank" v-show="linkedInLink" itemprop="sameAs">
         <img class="linkedin icon" src="../assets/icons/icon-linkedin.png">
       </a>
-      <a :href="twitterLink" target="_blank" v-show="twitterLink">
+      <a :href="twitterLink" target="_blank" v-show="twitterLink" itemprop="sameAs">
         <img class="twitter icon" src="../assets/icons/icon-twitter.gif">
       </a>
-      <a :href="githubLink" target="_blank" v-show="githubLink">
+      <a :href="githubLink" target="_blank" v-show="githubLink" itemprop="sameAs">
         <img class="icon" src="../assets/icons/icon-github.png">
       </a>
     </div>

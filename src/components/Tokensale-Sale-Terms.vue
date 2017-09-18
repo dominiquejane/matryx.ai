@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div itemscope itemtype="http://schema.org/TextDigitalDocument">
     <h2 class="c55 text-center" id="h.gjdgxs"><span class="c2">TERMS OF TOKEN SALE</span></h2>
     <p class="c21"><span class="c2">Date Posted: September 5</span><span class="c28 c15">th</span><span class="c2">, 2017<br>Last Updated: September 5</span><span class="c15 c28">th</span><span class="c2">, 2017</span></p>
     <p class="c9"><span class="c0">PLEASE READ THESE TERMS OF TOKEN SALE CAREFULLY. &nbsp;NOTE THAT SECTION&nbsp;17 CONTAINS A BINDING ARBITRATION CLAUSE AND CLASS ACTION WAIVER, WHICH AFFECT YOUR LEGAL RIGHTS. &nbsp;IF YOU DO NOT AGREE TO THESE TERMS OF SALE, DO NOT PURCHASE TOKENS.</span></p>

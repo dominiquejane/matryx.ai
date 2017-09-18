@@ -1,6 +1,6 @@
 <template lang="html">
-  <section class="content-container content-container--large ">
-    <h1 class="text--center text-color--matryx-dark-grey">
+  <section class="content-container content-container--large " itemscope itemtype="http://schema.org/AboutPage">
+    <h1 class="text--center text-color--matryx-dark-grey" itemprop="title">
       <span v-if=" language === 'ru' ">
         Matryx — платформа для децентрализованного сотрудничества
       </span>
@@ -14,7 +14,7 @@
     	<span v-else-if=" language === 'ko' ">Matryx: 분산화 협업을 위한 플랫폼</span>
     	<span v-else>Matryx: A Decentralized Collaboration Platform</span>
     </h1>
-    <p class="text-color--matryx-dark-grey">
+    <p class="text-color--matryx-dark-grey" itemprop="description">
       <span v-if=" language === 'ru' ">
         Matryx — это платформа децентрализованного сотрудничества. Matryx состоит из системы вознаграждений, библиотеки цифровых активов и торговой площадки. Публикация сведений о проблемах осуществляется вместе с назначением вознаграждения за проверенное решение. Пользователи затем работают совместно над решением проблем, делятся результатами и получают вознаграждение. Вознаграждения выдаются всем соответствующим соавторам, и все материалы добавляются в библиотеку Matryx и на торговую площадку для дальнейшей покупки. Это приводит к возникновению экосистемы общественного сотрудничества и создания идей, которая будет стимулировать исследования и инноваций.
       </span>

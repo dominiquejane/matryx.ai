@@ -1,7 +1,7 @@
 <template>
   <div id="tokensale-faq" class="faq__accordion">
     <QA cssId="how-can-i-participate-in-the-matryx-token-sale">
-      <span slot="question">
+      <span slot="question"  itemscope itemtype="http://schema.org/Question">
         How can I participate in the Matryx Token Sale?
       </span>
       <div slot="answer">
@@ -21,7 +21,7 @@
     </QA>
 
     <QA cssId="what-is-the-minimum-amount-to-participate">
-      <span slot="question">
+      <span slot="question"  itemscope itemtype="http://schema.org/Question">
         What is the minimum amount to participate in the Matryx Token Sale?
       </span>
       <p slot="answer">
@@ -32,7 +32,7 @@
     </QA>
 
     <QA cssId="Where-are-the-mtx-token-sale-terms">
-      <span slot="question">
+      <span slot="question"  itemscope itemtype="http://schema.org/Question">
         Where are the MTX Token Sale terms?
       </span>
       <p slot="answer">
@@ -42,7 +42,7 @@
     </QA>
 
     <QA cssId="why-is-matryx-conducting-a-token-sale">
-      <span slot="question">
+      <span slot="question"  itemscope itemtype="http://schema.org/Question">
         Why is Matryx conducting a token sale?
       </span>
       <p slot="answer">
@@ -51,7 +51,7 @@
     </QA>
 
     <QA cssId="when-will-I-receive-my-mtx">
-      <span slot="question">
+      <span slot="question"  itemscope itemtype="http://schema.org/Question" itemprop="name">
         When will I receive my MTX?
       </span>
       <p slot="answer">
@@ -64,7 +64,7 @@
     </QA>
 
     <QA cssId="will-matryx-accept-fiat">
-      <span slot="question">
+      <span slot="question"  itemscope itemtype="http://schema.org/Question" itemprop="name">
         Will Matryx accept fiat payment during the token sale?
       </span>
       <p slot="answer">
@@ -73,7 +73,7 @@
     </QA>
 
     <QA cssId="how-will-the-revenue-from-the-token-sale-be-used">
-      <span slot="question">
+      <span slot="question"  itemscope itemtype="http://schema.org/Question" itemprop="name">
         How will the revenue from the token sale be used?
       </span>
       <p slot="answer">
@@ -82,28 +82,28 @@
     </QA>
 
     <QA cssId="what-is-the-number-of-mtx-in-circulation">
-      <span slot="question">
+      <span slot="question"  itemscope itemtype="http://schema.org/Question" itemprop="name">
         What is the number of MTX in circulation? How many will be sold?
       </span>
-      <p slot="answer">
+      <p slot="answer" itemprop="suggestedAnswer acceptedAnswer text" itemscope itemtype="http://schema.org/Answer">
         Exactly 314,159,265 (π * 100,000,000) MTX will be created. 60% of the tokens will be sold during the token sale at a rate of 1164 MTX per ETH, with a cap of 161,803 (ϕ * 100,000) ETH.
       </p>
     </QA>
 
     <QA cssId="what-is-the-difference-between-matryx">
-      <span slot="question">
+      <span slot="question"  itemscope itemtype="http://schema.org/Question" itemprop="name">
         What is the difference between Matryx and MTX?
       </span>
-      <p slot="answer">
+      <p slot="answer" itemprop="suggestedAnswer acceptedAnswer text" itemscope itemtype="http://schema.org/Answer">
         Matryx refers to the entire platform, blockchain, and dApp ecosystem of incentivized collaboration. MTX is a symbol referring specifically to the ERC20 token circulated on the platform.
       </p>
     </QA>
 
     <QA cssId="how-can-i-use-the-mtx-token">
-      <span slot="question">
+      <span slot="question"  itemscope itemtype="http://schema.org/Question" itemprop="name">
         How can I use the MTX token?
       </span>
-      <p slot="answer">
+      <p slot="answer" itemprop="suggestedAnswer acceptedAnswer text" itemscope itemtype="http://schema.org/Answer">
         The MTX token can be used to post bounties and purchase assets on the Matryx platform. As the platform grows, apps within the Matryx ecosystem will use MTX to exchange value in a variety of ways.
       </p>
     </QA>

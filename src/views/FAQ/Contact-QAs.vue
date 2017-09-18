@@ -1,17 +1,17 @@
 <template>
   <div id="contact-faq" class="faq__accordion">
     <QA cssId="how-can-I-contribute-to-matryx">
-      <span slot="question">How can contribute to Matryx?</span>
-      <span slot="answer">
+      <span slot="question" itemscope itemtype="http://schema.org/Question" itemprop="name">How can contribute to Matryx?</span>
+      <span slot="answer" itemprop="suggestedAnswer acceptedAnswer text" itemscope itemtype="http://schema.org/Answer">
         <p>If you’re interested in joining the Matryx team, reach out to us at <a href="mailto:team@matryx.ai">team@matryx.ai</a> with a resume, intention, and as much additional information about you as possible. We are always looking to add new talent to our growing team. </p>
       </span>
     </QA>
 
     <QA cssId="im-a-developer-and-i-want-to-submit-code">
-      <span slot="question">
+      <span slot="question" itemscope itemtype="http://schema.org/Question" itemprop="name">
         I’m a developer and I want to submit code.
       </span>
-      <span slot="answer">
+      <span slot="answer" itemprop="suggestedAnswer acceptedAnswer text" itemscope itemtype="http://schema.org/Answer">
         <p>
           The Matryx platform is open source. Developers who want to submit contributions can do so by submitting pull requests on our <a href="https://github.com/matryx" target="_blank">GitHub</a> for review.
         </p>
@@ -25,10 +25,10 @@
     </QA>
 
     <QA cssId="more-questions">
-      <span slot="question">
+      <span slot="question" itemscope itemtype="http://schema.org/Question" itemprop="name">
         More questions?
       </span>
-      <span slot="answer">
+      <span slot="answer" itemprop="suggestedAnswer acceptedAnswer text" itemscope itemtype="http://schema.org/Answer">
         <p>Shoot us an email with your questions and concerns at
           <a href="mailto:team@matryx.ai">team@matryx.ai</a>
         </p>

@@ -33,13 +33,17 @@
           <Countdown :end="endDate" style="margin-top: 0px;"></Countdown>
 
           <p class="text-center text-color--matryx-blue">
+            <span v-if=" language === 'ch' ">我们感谢大家的参与，点击查看我们的
+            <a class="link" href="https://matryx.ai/matryx-token-sale-extension-cn.pdf" target="_blank"> 最新消息</a></span>
+            <span v-else>
             We appreciate everyone’s support so far
             <br/> and have some
             <a class="link"
-              href="https://blog.matryx.ai/token-sale-update-changing-it-up-5f83de13a76d" 
+              href="https://blog.matryx.ai/token-sale-update-changing-it-up-5f83de13a76d"
               target="_blank"
             >
               exciting news!</a>
+              </span>
           </p>
 
           <Matryx-Btn :text="buttonText" :handleClick="openSaleModal">
@@ -407,7 +411,7 @@ iframe.above-the-fold__video {
 
 @media screen and (max-width: 550px) {
   section.above-the-fold {
-  
+
     & > .content-container {
       padding-top: 40px;
       // margin-bottom: 140px;

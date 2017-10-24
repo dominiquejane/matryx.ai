@@ -3,28 +3,28 @@
     <Navbar-Token></Navbar-Token>
     <Navbar-Sticky></Navbar-Sticky>
     <Above-the-Fold></Above-the-Fold>
-    <div class="cta-middle-banner">
+    <!--<div class="cta-middle-banner">
       <CTA-Banner :lighterText="true" :blueBkg="true" cta-location="Very Top"></CTA-Banner>
-    </div>
-    <Media-Mentions></Media-Mentions>
+    </div>-->
     <About-Matryx></About-Matryx>
+    <div class="cta-middle-banner">
+      <CTA-Banner :lighterText="true" :greyBkg="true" cta-location="Middle"></CTA-Banner>
+    </div>
+    <Company-Overview id="company-overview"></Company-Overview>
     <div class="cta-middle-banner">
       <CTA-Banner :lighterText="true" :blueBkg="true" cta-location="Top"></CTA-Banner>
     </div>
     <div class="bkg-color--matryx-lighter-grey">
-      <Token-Sale></Token-Sale>
+    <Token-Sale></Token-Sale>
     </div>
     <Audited-By></Audited-By>
     <About-Token-Sale></About-Token-Sale>
-    <div class="cta-middle-banner">
-      <CTA-Banner :lighterText="true" :greyBkg="true" cta-location="Middle"></CTA-Banner>
-    </div>
-    <Nanome-Info></Nanome-Info>
-    <Company-Overview id="company-overview"></Company-Overview>
+
     <Quotes></Quotes>
     <Bounty-System></Bounty-System>
     <CTA-Banner :whiteBkg="true" cta-location="Bottom"></CTA-Banner>
     <Matryx-Team></Matryx-Team>
+    <Media-Mentions></Media-Mentions>
     <News-Events></News-Events>
 <!--     <CTA-Banner :lighterText="true" :footerBkg="true" cta-location="Bottom" id="Footer"></CTA-Banner> -->
   </div>

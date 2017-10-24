@@ -44,7 +44,7 @@
           <span v-else-if=" language === 'ko' ">백서를</span>
           <span v-else>WHITEPAPER</span>
         </b-nav-item>
-        
+
         <b-nav-item class="text-color--matryx-grey"
           target="_blank"
           href="/sale-terms-ch.pdf"

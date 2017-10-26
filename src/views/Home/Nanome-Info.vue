@@ -18,19 +18,23 @@
         	<span v-else-if=" language === 'ko' ">Matryx은 과학자들과 엔지니어들이 나노 수준의 정밀도로 협력 및 디자인하고 시뮬레이션을 할 수 있도록 해주는 지능형 가상현실 인터페이스를 제작하고 있습니다. 저희 소프트웨어는 직접 조작하는 가상현실 인터페이스와 클라우드 컴퓨팅의 통합을 통해 생명과학, 재료과학, 나노엔지니어링 분야에서의 연구와 개발을 지원하고 있습니다.</span>
         	<span v-else>
             The Nanome team builds intelligent virtual reality interfaces that enable scientists and engineers to collaborate, design and simulate with nanoscale precision.
-            <br/><br/>Our widely used software suite includes Calcflow, the industry-leading VR mathematics toolkit, and nano-one, a VR interface for nanoscale design and simulation.
+            <br/><br/>Our widely used software suite includes open source Calcflow, the industry-leading VR mathematics toolkit, and nano-one, a VR interface for nanoscale design and simulation.
           </span>
         </div>
       </div>
       <div class="nanome__logos">
-        <h3 class="text-color--matryx-grey text-align-center">
+        <!-- <h3 class="text-color--matryx-grey text-align-center">
           <span v-if=" language === 'ru' ">Наши текущие продукты</span>
         	<span v-else-if=" language === 'ch' ">我们目前的产品</span>
         	<span v-else-if=" language === 'ge' ">Unsere aktuellen Produkte</span>
         	<span v-else-if=" language === 'ja' ">当社の現在の製品</span>
         	<span v-else-if=" language === 'ko' ">저희 현재 제품들</span>
         	<span v-else>OUR CURRENT PRODUCTS</span>
-        </h3>
+        </h3> -->
+
+        <div class="nanone__logos__calcflow logo">
+          <img src="../../assets/images/nanometeam.png" alt="team">
+        </div>
         <p>
           <span v-if=" language === 'ru' ">Доступно на <a href="http://store.steampowered.com/app/493430/nanoone/" target="_blank">Steam</a> и <a href="http://calcflow.io/" target="_blank">Oculus</a></span>
         	<span v-else-if=" language === 'ch' ">已登陆 <a href="http://store.steampowered.com/app/493430/nanoone/" target="_blank">Steam</a> 和 <a href="http://calcflow.io/" target="_blank">Oculus</a> 平台</span>
@@ -39,10 +43,12 @@
         	<span v-else-if=" language === 'ko' "><a href="http://store.steampowered.com/app/493430/nanoone/" target="_blank">Steam</a> 및 <a href="http://calcflow.io/" target="_blank">Oculus에서</a> 이용가능</span>
         	<span v-else>Available on <a href="http://store.steampowered.com/app/493430/nanoone/" target="_blank">Steam</a> and <a href="http://calcflow.io/" target="_blank">Oculus</a></span>
         </p>
-        <div class="nanone__logos__calcflow logo">
-          <img src="../../assets/images/nanometeam.png" alt="team">
-        </div>
       </div>
+    </div>
+    <div class="content-container--medium nanome-sub text-align-center">
+      <h3 class="text-color--matryx-dark-grey">To advance human knowledge, scientific cooperations and technology, Nanome introduces
+        Matryx: A Blockchain powered collaboration platform for VR based research</span>
+      </h3>
     </div>
   </section>
 </template>
@@ -61,21 +67,29 @@ export default {
 <style lang="scss" scoped>
 @import '../../assets/css/colors';
 
+.text-align-center{
+  margin: 0 auto;
+}
+
 .nanome {
   display: flex;
   justify-content: center;
   color: #4A4A4A ;
   flex-direction: row;
-  border-bottom: 1px solid $light-purple-border;
   padding-bottom: 40px;
+  padding-top: 0px;;
+}
+
+.nanome-sub{
+  padding-bottom: 50px;
 }
 
 .nanome__info {
-  padding: 20px 40px 0 0;
-  max-width: 600px;
+  padding: 20px 0px 0 0;
+  max-width: 800px;
 
  &__title {
-    font-size: 38px;
+    font-size: 30px;
     line-height: 46px;
   }
 
@@ -98,7 +112,7 @@ export default {
   }
 
 .logo {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   text-align: left;
   display: inline-block;
   max-width: calc(50%-10px);

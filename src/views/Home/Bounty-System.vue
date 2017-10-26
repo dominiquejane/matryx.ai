@@ -277,7 +277,6 @@ p.content-container--medium {
           width: calc(100% - 70px);
           margin-left: 20px;
           margin-top: -2px;
-          font-size: 18px;
 
          &::after {
             content: '';

@@ -173,7 +173,7 @@ section.above-the-fold {
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 40px 40px 180px;
+    padding: 260px 40px 180px;
     z-index: 1;
     position:relative;
   }
@@ -225,7 +225,7 @@ section.above-the-fold {
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 0;
-  background-position-y: bottom;
+  background-position-y: initial;
 }
 
 iframe.above-the-fold__video {

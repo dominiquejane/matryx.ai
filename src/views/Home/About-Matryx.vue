@@ -1,6 +1,9 @@
 <template lang="html">
   <section class="content-container content-container--large ">
-    <h1 class="text--center text-color--matryx-darker-grey">
+    <div class="MatryxLogo content-container">
+      <img src="../../assets/images/Matryx_Black_Full_Logo.png" alt="">
+    </div>
+    <h2 class="text--center text-color--matryx-darker-grey">
       <span v-if=" language === 'ru' " style="font-size: 32px;">
         Matryx — платформа для децентрализованного сотрудничества
       </span>
@@ -12,10 +15,10 @@
         Matryx：分散型コラボレーションのプラットフォーム
       </span>
     	<span v-else-if=" language === 'ko' ">Matryx: 분산화 협업을 위한 플랫폼</span>
-    	<span v-else>Matryx: The Collaborative Research and Development Engine </span>
-    </h1>
+    	<span v-else>The Collaborative Research &#38; Development Engine </span>
+    </h2>
     <h3 class="text--center text-color--matryx-dark-grey">Optimized for Virtual Reality Interfaces</h3>
-    <p class="text-color--matryx-dark-grey">
+    <!-- <p class="text-color--matryx-dark-grey">
       <span v-if=" language === 'ru' ">
         Matryx — это платформа децентрализованного сотрудничества. Matryx состоит из системы вознаграждений, библиотеки цифровых активов и торговой площадки. Публикация сведений о проблемах осуществляется вместе с назначением вознаграждения за проверенное решение. Пользователи затем работают совместно над решением проблем, делятся результатами и получают вознаграждение. Вознаграждения выдаются всем соответствующим соавторам, и все материалы добавляются в библиотеку Matryx и на торговую площадку для дальнейшей покупки. Это приводит к возникновению экосистемы общественного сотрудничества и создания идей, которая будет стимулировать исследования и инноваций.
       </span>
@@ -34,7 +37,7 @@
     	<span v-else>
         Matryx is a platform for decentralized collaboration. Matryx consists of a bounty system, a library of digital assets, and a marketplace. Problems are posted, along with a bounty for a verified solution. Users then collaborate to solve problems, share results, and earn rewards. Rewards are given to all relevant contributors, and all submissions are added to the Matryx library and marketplace for future purchase. This will create an ecosystem of public collaboration and ideas that will drive research and innovation.
       </span>
-    </p>
+    </p> -->
   </section>
 </template>
 
@@ -52,14 +55,22 @@ export default {
 <style lang="scss" scoped>
 @import '../../assets/css/colors.scss';
 
+.MatryxLogo{
+  margin: 0 auto;
+  text-align: center;
+}
+
 section.content-container {
   /*border-top: 1px solid $matryx-grey;
   border-bottom: 1px solid $matryx-grey;*/
-  padding: 100px 80px 20px 80px;
-
-  h1 {
+  padding: 0px 80px 20px 80px;
+  h1{
     font-size: 46px;
     margin-bottom: 20px;
+  }
+  h2{
+    font-weight: 700px;
+    font-size: 32px;
   }
   h3{
     padding:15px;
@@ -73,6 +84,13 @@ section.content-container {
 @media screen and (max-width: 850px) {
   section.content-container {
     padding: 60px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  h3{
+    font-size: 24px;
+    line-height: 30px;
   }
 }
 </style>

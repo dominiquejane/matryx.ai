@@ -2,27 +2,32 @@
   <div class="body-content" style="background-color:#FFF;">
     <Navbar-Token></Navbar-Token>
     <Navbar-Sticky></Navbar-Sticky>
-    <Above-the-Fold></Above-the-Fold>
+    <About-Matryx></About-Matryx>
+    <Nanome-Info></Nanome-Info>
+    <Above-the-Fold></Above-the-Fold>  <!-- tokensale-button -->
     <!--<div class="cta-middle-banner">
       <CTA-Banner :lighterText="true" :blueBkg="true" cta-location="Very Top"></CTA-Banner>
     </div>-->
-    <About-Matryx></About-Matryx>
-    <div class="cta-middle-banner">
+    <!-- <div class="cta-middle-banner">
       <CTA-Banner :lighterText="true" :greyBkg="true" cta-location="Middle"></CTA-Banner>
-    </div>
+    </div> -->
     <Company-Overview id="company-overview"></Company-Overview>
-    <div class="cta-middle-banner">
-      <CTA-Banner :lighterText="true" :blueBkg="true" cta-location="Top"></CTA-Banner>
-    </div>
+
+    <Bounty-System></Bounty-System>
+
     <div class="bkg-color--matryx-lighter-grey">
     <Token-Sale></Token-Sale>
     </div>
     <Audited-By></Audited-By>
+    <div class="cta-middle-banner">
+      <CTA-Banner :lighterText="true" :blueBkg="true" cta-location="Top"></CTA-Banner>
+    </div>
+    <Quotes></Quotes>
     <About-Token-Sale></About-Token-Sale>
 
-    <Quotes></Quotes>
-    <Bounty-System></Bounty-System>
-    <CTA-Banner :whiteBkg="true" cta-location="Bottom"></CTA-Banner>
+
+
+    <!-- <CTA-Banner :whiteBkg="true" cta-location="Bottom"></CTA-Banner> -->
     <Matryx-Team></Matryx-Team>
     <Media-Mentions></Media-Mentions>
     <News-Events></News-Events>

@@ -1,12 +1,6 @@
 <template>
   <section>
     <div class="content-container--large text--light content-container" id="what-is-matryx">
-      <div class="text-align-center">
-        <h3 class="text-color--matryx-dark-grey text-align-center">To advance human knowledge, scientific cooperations and technology, Nanome introduces
-          Matryx: A Blockchain powered collaboration platform for VR based research</span>
-        </h3>
-      </div>
-
       <div class="overview">
         <div class="overview__column-2 overview__img--2">
         </div>
@@ -108,7 +102,7 @@
         <div class="overview__column-2 mobile--order-2 overview__img--3">
         </div>
       </div>
-      <div class="overview">
+      <!-- <div class="overview">
         <div class="overview__column-1 mobile--order-1">
           <h3 class="text-color--matryx-black subheader">
             <span v-if=" language === 'ru' ">Основные сведения о Matryx</span>
@@ -141,7 +135,7 @@
         </div>
         <div class="overview__column-2 mobile--order-2 overview__img--1">
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>

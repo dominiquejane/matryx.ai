@@ -1,5 +1,5 @@
 <template>
-  <section class="above-the-fold">
+  <section class="above-the-fold" id="token-sale-section">
     <!-- <video src="https://giphy.com/embed/3oKIPaPc7NBFYWveIU" class="above-the-fold__video" autoplay="true" loop="true"></video> -->
     <!-- <iframe src="https://giphy.com/embed/3oKIPaPc7NBFYWveIU" frameBorder="0" class="above-the-fold__video"></iframe> -->
     <!-- <div class="above-the-fold__video__overlay"></div> -->

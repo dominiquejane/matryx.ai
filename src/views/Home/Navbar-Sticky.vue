@@ -14,16 +14,6 @@
       <b-nav is-nav-bar>
         <b-nav-item
           class="text-color--matryx-grey nav-link--mobile-hide"
-          href="#what-is-matryx">
-          <span class="russian" v-if=" language === 'ru' ">относительно</span>
-          <span v-else-if=" language === 'ch' ">关于</span>
-          <span v-else-if=" language === 'ge' ">ÜBER</span>
-          <span v-else-if=" language === 'ja' ">について</span>
-          <span v-else-if=" language === 'ko' ">에 대하여</span>
-          <span v-else>ABOUT</span>
-        </b-nav-item>
-        <b-nav-item
-          class="text-color--matryx-grey nav-link--mobile-hide"
           href="#bounty-system">
           <span class="russian" v-if=" language === 'ru' ">системы вознаграждений</span>
           <span v-else-if=" language === 'ch' ">奖励金制度</span>
@@ -32,17 +22,15 @@
           <span v-else-if=" language === 'ko' ">는 포상 제도</span>
           <span v-else>BOUNTY SYSTEM</span>
         </b-nav-item>
-        <b-nav-item class="text-color--matryx-grey"
-          target="_blank"
-          :href="whitePaperHref"
-          @click="whitePaperClick(language)"
-        >
-          <span class="russian" v-if=" language === 'ru' ">техническую документацию</span>
-          <span v-else-if=" language === 'ch' ">白皮书</span>
-          <span v-else-if=" language === 'ge' ">WHITE PAPER</span>
-          <span v-else-if=" language === 'ja' ">WHITEPAPER</span>
-          <span v-else-if=" language === 'ko' ">백서를</span>
-          <span v-else>WHITEPAPER</span>
+        <b-nav-item
+          class="text-color--matryx-grey nav-link--mobile-hide"
+          href="#token-sale-section">
+          <span class="russian" v-if=" language === 'ru' ">продажа токенов</span>
+          <span v-else-if=" language === 'ch' ">令牌销售</span>
+          <span v-else-if=" language === 'ge' ">Token Verkauf</span>
+          <span v-else-if=" language === 'ja' ">トークン販売</span>
+          <span v-else-if=" language === 'ko' ">토큰 판매</span>
+          <span v-else>TOKEN SALE</span>
         </b-nav-item>
 
         <b-nav-item class="text-color--matryx-grey"
@@ -58,7 +46,19 @@
           href="/sale-terms.pdf"
           v-else
         >
-          Sale Terms
+          Terms
+        </b-nav-item>
+        <b-nav-item class="text-color--matryx-grey"
+          target="_blank"
+          :href="whitePaperHref"
+          @click="whitePaperClick(language)"
+        >
+          <span class="russian" v-if=" language === 'ru' ">техническую документацию</span>
+          <span v-else-if=" language === 'ch' ">白皮书</span>
+          <span v-else-if=" language === 'ge' ">WHITE PAPER</span>
+          <span v-else-if=" language === 'ja' ">WHITEPAPER</span>
+          <span v-else-if=" language === 'ko' ">백서를</span>
+          <span v-else>WHITEPAPER</span>
         </b-nav-item>
 
         <!-- Only Mobile View -->

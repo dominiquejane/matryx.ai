@@ -12,7 +12,7 @@
         <b-nav is-nav-bar>
           <b-nav-item class="text-color--white"
             aria-disabled="false"
-            href="/"
+            href="#token-sale-section"
             target="_self"
           >
             <span class="russian" v-if=" language === 'ru' ">

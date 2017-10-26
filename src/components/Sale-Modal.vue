@@ -387,7 +387,10 @@ section.sale-modal {
           font-size: 18px;
           margin-bottom: 5px;
         }
-
+        .submit-btn{
+          margin: 30px auto;
+          height: 70px;
+        }
         .submit-btn:disabled {
           opacity: 0.4;
           box-shadow: none;

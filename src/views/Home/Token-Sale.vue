@@ -77,7 +77,7 @@
     </h5>
 
     <h5 class="text-center">
-      Read the updates to our token sale on our 
+      Read the updates to our token sale on our
       <a class="link"
         href="https://blog.matryx.ai/token-sale-update-changing-it-up-5f83de13a76d"
         target="_blank"
@@ -224,10 +224,11 @@ export default {
 <style lang="scss" scoped>
 section.content-container {
   margin-top: 0;
-  padding: 40px 0 80px;
+  padding: 100px 0 100px;
 
   .title {
-    font-size: 24px;
+    font-size: 40px;
+    padding-bottom: 30px;
   }
 
   .sub-title {

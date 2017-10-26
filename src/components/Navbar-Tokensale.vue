@@ -63,6 +63,10 @@
     				<span v-else>Total MTX Available</span>
           </p>
         </div> -->
+        <div class="token-bar__section third">
+          <img src="../assets/icons/icon-matryx-token-blue.png" alt="">
+          <p class="text-color--white">1 ETh = 1164 MTX</p>
+        </div>
         <div class="token-bar__section fourth">
           <img src="../assets/icons/icon-eth-token-blue.png" alt="">
           <p class="text-color--white">26,888</p>
@@ -201,7 +205,7 @@ section.navbar-tokensale {
   .fifth {
     left: 20%;
     animation: scroll-fifth 30s linear -6s infinite;
-    align-items: baseline;
+    /*align-items: baseline;*/
 
     p{ line-height:24px; }
   }

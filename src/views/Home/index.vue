@@ -4,7 +4,7 @@
     <Navbar-Sticky></Navbar-Sticky>
     <About-Matryx></About-Matryx>
     <Nanome-Info></Nanome-Info>
-    <Above-the-Fold></Above-the-Fold>  <!-- tokensale-button -->
+
     <!--<div class="cta-middle-banner">
       <CTA-Banner :lighterText="true" :blueBkg="true" cta-location="Very Top"></CTA-Banner>
     </div>-->
@@ -15,9 +15,10 @@
 
     <Bounty-System></Bounty-System>
 
-    <div class="bkg-color--matryx-lighter-grey">
+    <!-- <div class="bkg-color--matryx-lighter-grey"> -->
     <Token-Sale></Token-Sale>
-    </div>
+    <!-- </div> -->
+    <Above-the-Fold></Above-the-Fold>  <!-- tokensale-button -->
     <Audited-By></Audited-By>
     <div class="cta-middle-banner">
       <CTA-Banner :lighterText="true" :blueBkg="true" cta-location="Top"></CTA-Banner>

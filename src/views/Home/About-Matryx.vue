@@ -60,6 +60,14 @@ export default {
   text-align: center;
 }
 
+.MatryxLogo img{
+  max-width: 500px;
+}
+
+.content-container{
+  padding: 50px 40px;
+}
+
 section.content-container {
   /*border-top: 1px solid $matryx-grey;
   border-bottom: 1px solid $matryx-grey;*/
@@ -82,8 +90,20 @@ section.content-container {
 }
 
 @media screen and (max-width: 850px) {
+  .MatryxLogo img{
+    max-width: 250px;
+    padding: 0px;
+  }
+  .content-container{
+    margin: 0 auto;
+    padding-bottom: 15px;
+  }
+
+  section.above-the-fold > .content-container {
+    padding-top: 150px;
+  }
   section.content-container {
-    padding: 60px;
+    padding: 10px;
   }
   h1 {
     font-size: 25px;

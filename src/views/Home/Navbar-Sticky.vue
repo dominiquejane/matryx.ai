@@ -116,14 +116,16 @@
 
       <b-nav is-nav-bar class="ml-auto">
         <b-nav-item class="get-notified">
-          <button @click.prevent="openGetNotified">
+          <!-- <button @click.prevent="openGetNotified">
             <span class="russian" v-if=" language === 'ru' ">ПОЛУЧАЙТЕ УВЕДОМЛЕНИЯ</span>
             <span v-else-if=" language === 'ch' ">接收通知</span>
             <span class="german" v-else-if=" language === 'ge' ">MICH BENACHRICHTIGEN</span>
             <span v-else-if=" language === 'ja' ">通知を受ける</span>
             <span v-else-if=" language === 'ko' ">알림을 받으세요</span>
             <span v-else>STAY UPDATED</span>
-          </button>
+          </button> -->
+          <Matryx-Btn :text="buttonText" :handleClick="openSaleModal">
+          </Matryx-Btn>
         </b-nav-item>
       </b-nav>
       </b-collapse>
@@ -134,9 +136,14 @@
 
 <script>
 import { appAnalytics } from '@/analytics'
+import MatryxBtn from '@/components/Matryx-Btn'
 
 export default {
   name: 'NavbarSticky',
+
+  components: {
+    MatryxBtn
+  },
 
   data () {
     return {
@@ -163,12 +170,19 @@ export default {
     },
     changeLanguage () {
       this.$store.commit('setLanguage', this.selectedLanguage)
+    },
+    openSaleModal () {
+      this.$store.commit('showSaleModal', true)
     }
   },
 
   computed: {
     language () {
       return this.$store.state.language
+    },
+
+    buttonText () {
+      return this.language === 'ch' ? '购买MTX' : 'Purchase MTX'
     },
 
     whitePaperHref () {
@@ -298,21 +312,22 @@ export default {
       button {
         height: 40px;
         padding: 10px 20px;
+        font-size: 16px;
         border-radius: 40px;
-        border: 1px solid $matryx-light-blue;
+        border: 1px solid $light-green;
         color: #fff;
         outline:none;
-        background-color: $matryx-light-blue !important;
+        background-color: $light-green !important;
         display: flex;
         align-items: center;
-        line-height: 0;
-        margin-top:2px;
+        /*line-height: 0;*/
+        /*margin-top:2px;*/
 
         &:active,&:hover {
           outline: none;
-          background: $white !important;
-          color: $matryx-light-blue;
-          /*color: #082135;*/
+          background: $matryx-blue !important;
+          color: $white;
+          border: 1px solid $white;
         }
         &:active {
           box-shadow: 1px 1px 10px #fff, -1px -1px 10px #fff;
@@ -375,6 +390,12 @@ nav {
   .navbar.navbar-light .get-notified {
     margin-right: 0px;
   }
+    #nav .nav-link {
+      /*padding: 2px 5px;*/
+    }
+  #nav .navbar.navbar-light .get-notified > .nav-link button {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -383,6 +404,8 @@ nav {
     padding-left: 0;
 
     .navbar.navbar-light {
+
+      margin-top: 10px;
 
       .nav-item {
         width: 100%;
@@ -433,8 +456,10 @@ nav {
             background-color: transparent !important;
           }
           button {
-            height: 30px;
+            height: 33px;
             font-size: 13px;
+            padding: 6px 40px;
+            max-width: 200px;
           }
         }
 
@@ -443,6 +468,7 @@ nav {
     }
     #nav-toggle {
       margin-top: 10px;
+      padding-bottom: 12px;
     }
 
     .navbar-brand {

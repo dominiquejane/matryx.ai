@@ -58,7 +58,7 @@
         </div>
       </div>
 
-      <div matrclass="token-sale__video-launcher content-container--medium">
+      <div class="token-sale__video-launcher content-container--medium">
         <iframe class="matryx-video-yt"
           width="560" height="315"
           :src="selectedLanguage" frameborder="0"
@@ -168,12 +168,13 @@ section.above-the-fold {
   margin-bottom: 0px;
   margin-top:0;
   position:relative;
+  padding-top: 200px;
+  padding-bottom: 250px;
 
   & > .content-container {
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 260px 40px 180px;
     z-index: 1;
     position:relative;
   }
@@ -182,7 +183,7 @@ section.above-the-fold {
     background-color: $light-green;
     border-color: $light-green;
     margin: -5px auto 10px;
-
+    height: 70px;
     &:hover {
       background-color: $matryx-blue;
       border-color: $white;
@@ -355,30 +356,40 @@ iframe.above-the-fold__video {
   z-index: 1;
 }
 
-
-
-
-
 .purple-btn {
   border: none;
 }
 
 
 /*----- MEDIA QUERIES -----*/
-@media screen and (min-width: 1690px) {
-  section.above-the-fold {
-    padding-bottom: 220px;
-  }
-}
 
-@media screen and (min-width: 1400px) {
+// @media screen and (min-width: 1690px) {
+//   section.above-the-fold {
+//     padding-top: 200px;
+//     padding-bottom: 300px;
+//   }
+// }
+
+// @media screen and (max-width: 1500px) {
+//   section.above-the-fold {
+//     max-height: 800px;
+//   }
+// }
+
+@media screen and (min-width: 1700px) {
   section.above-the-fold {
-    padding-bottom: 50px;
+    padding-top: 250px;
+    padding-bottom: 300px;
+    max-height: 1000px;
   }
 }
 
 @media screen and (max-width: 1050px) {
-
+  section.above-the-fold {
+    & > .content-container {
+      padding-top: 200px;
+    }
+  }
   .token-sale {
     flex-direction: column;
   }
@@ -388,11 +399,9 @@ iframe.above-the-fold__video {
     margin: 20px 0;
     max-width: 100%;
     text-align:center;
+
   }
-  .token-sale__video-launcher {
-    width: 100%;
-    img {width: 100%;}
-  }
+
   .token-sale__text p.lead {
     margin: 20px auto;
     width: 100%;
@@ -403,6 +412,12 @@ iframe.above-the-fold__video {
 }
 
 @media screen and (max-width: 750px) {
+  section.above-the-fold {
+    & > .content-container {
+      padding-top: 200px;
+    }
+  }
+
   iframe{
     width: 300px !important;
     height: 200px !important;
@@ -413,7 +428,7 @@ iframe.above-the-fold__video {
   section.above-the-fold {
 
     & > .content-container {
-      padding-top: 40px;
+      padding-top: 100px;
       // margin-bottom: 140px;
     }
   }

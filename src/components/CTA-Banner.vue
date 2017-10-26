@@ -144,7 +144,7 @@ export default {
 
  .cta-middle-banner .cta-banner  {
     position: relative;
-    padding: 180px 0 90px;
+    padding: 120px 0 90px;
     // margin-top: -130px;
   }
 

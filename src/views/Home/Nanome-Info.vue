@@ -132,6 +132,9 @@ export default {
   }
   .nanome__info {
     padding: 20px 0;
+    &__title {
+       font-size: 28px;
+     }
     &__text {
       max-width: 100%;
     }

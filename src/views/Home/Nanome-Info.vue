@@ -18,7 +18,7 @@
         	<span v-else-if=" language === 'ko' ">Matryx은 과학자들과 엔지니어들이 나노 수준의 정밀도로 협력 및 디자인하고 시뮬레이션을 할 수 있도록 해주는 지능형 가상현실 인터페이스를 제작하고 있습니다. 저희 소프트웨어는 직접 조작하는 가상현실 인터페이스와 클라우드 컴퓨팅의 통합을 통해 생명과학, 재료과학, 나노엔지니어링 분야에서의 연구와 개발을 지원하고 있습니다.</span>
         	<span v-else>
             The Nanome team builds intelligent virtual reality interfaces that enable scientists and engineers to collaborate, design and simulate with nanoscale precision.
-            <br/><br/>Our widely used software suite includes open source <a href="http://calcflow.io/">Calcflow</a>, the industry-leading VR mathematics toolkit, and <a href="http://store.steampowered.com/app/493430/nanoone/">nano-one</a>, a VR interface for nanoscale design and simulation.
+            <br/><br/>Our widely used software suite includes open source <a href="http://calcflow.io/" target="_blank">Calcflow</a>, the industry-leading VR mathematics toolkit, and <a href="http://store.steampowered.com/app/493430/nanoone/" target="_blank">nano-one</a>, a VR interface for nanoscale design and simulation.
           </span>
         </div>
       </div>

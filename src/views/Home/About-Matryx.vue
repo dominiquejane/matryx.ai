@@ -15,9 +15,18 @@
         Matryx：分散型コラボレーションのプラットフォーム
       </span>
     	<span v-else-if=" language === 'ko' ">Matryx: 분산화 협업을 위한 플랫폼</span>
+      <span v-else-if=" language === 'es' ">La platforma colaborativa de investigación y desarrollo</span>
     	<span v-else>The Collaborative Research &#38; Development Engine </span>
     </h2>
-    <h3 class="text--center text-color--matryx-dark-grey">Optimized for Virtual Reality Interfaces</h3>
+    <h3 class="text--center main-sub text-color--matryx-dark-grey">
+      <span v-if=" language === 'ru' ">Оптимизирован для виртуальных интерфейсов</span>
+      <span v-else-if=" language === 'ch' ">最大级别优化虚拟现实</span>
+      <span v-else-if=" language === 'ge' ">Optimiert für Virtual Reality Interfaces</span>
+      <span v-else-if=" language === 'ja' ">バーチャルリアリティインターフェイスに最適化</span>
+      <span v-else-if=" language === 'ko' ">가상 현실 인터페이스에 최적화 됨</span>
+      <span v-else-if=" language === 'es' ">Optimizado para interfaces de realidad virtual</span>
+      <span v-else>Optimized for Virtual Reality Interfaces</span>
+    </h3>
     <!-- <p class="text-color--matryx-dark-grey">
       <span v-if=" language === 'ru' ">
         Matryx — это платформа децентрализованного сотрудничества. Matryx состоит из системы вознаграждений, библиотеки цифровых активов и торговой площадки. Публикация сведений о проблемах осуществляется вместе с назначением вознаграждения за проверенное решение. Пользователи затем работают совместно над решением проблем, делятся результатами и получают вознаграждение. Вознаграждения выдаются всем соответствующим соавторам, и все материалы добавляются в библиотеку Matryx и на торговую площадку для дальнейшей покупки. Это приводит к возникновению экосистемы общественного сотрудничества и создания идей, которая будет стимулировать исследования и инноваций.
@@ -65,7 +74,7 @@ export default {
 }
 
 .content-container{
-  padding: 50px 40px;
+  padding: 20px 40px;
 }
 
 section.content-container {
@@ -81,7 +90,7 @@ section.content-container {
     font-size: 32px;
   }
   h3{
-    padding:15px;
+    padding:5px;
   }
   p{
     padding: 25px;

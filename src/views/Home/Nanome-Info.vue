@@ -8,7 +8,8 @@
         	<span v-else-if=" language === 'ge' ">Erstellt vom Matryx-Team</span>
         	<span v-else-if=" language === 'ja' ">Matryxのチームによる構築</span>
         	<span v-else-if=" language === 'ko' ">Matryx의 팀에 의해 제작</span>
-        	<span v-else>Built by Nanome, the team behind CalcFlow and nano-one</span>
+          <span v-else-if=" language === 'es' ">Construido por Nanome, el equipo de tras de Calcflow and nano-one</span>
+        	<span v-else>Built by Nanome, the team behind Calcflow and nano-one</span>
         </h2>
         <div class="nanome__info__text text-color--matryx-dark-grey">
           <span v-if=" language === 'ru' ">Matryx создает интеллектуальные интерфейсы виртуальной реальности, которые позволяют ученым и инженерам совместно работать, проектировать и моделировать с точностью до наноразмеров. Наша программа помогает продвигать исследования и разработки в биологических науках, материаловедении и наноинженерии путем интеграции практического интерфейса виртуальной реальности с облачными вычислениями.</span>
@@ -16,16 +17,18 @@
         	<span v-else-if=" language === 'ge' ">Matryx erstellt intelligente Virtual-Reality-Interfaces, die Wissenschaftlern und Ingenieuren eine Zusammenarbeit, Konzeption und Simulation mit Präzision im Nanomaßstab ermöglichen. Unsere Software fördert den Fortschritt von Forschung und Entwicklung in Biowissenschaften, Materialwissenschaften und Nanotechnik durch die Kombination eines interaktiven Virtual-Reality-Interfaces mit Cloud Computing.</span>
         	<span v-else-if=" language === 'ja' ">Matryxはインテリジェントなバーチャルリアリティインターフェイスを構築し、科学者とエンジニアがナノスケールの精度で協力、設計、シミュレーションを行うことを可能にしています。当社のソフトウェアは、実践的なバーチャルリアリティインターフェースとクラウドコンピューティングを統合することにより、ライフサイエンス、材料科学、ナノエンジニアリングの研究開発を進める上で役立ちます。</span>
         	<span v-else-if=" language === 'ko' ">Matryx은 과학자들과 엔지니어들이 나노 수준의 정밀도로 협력 및 디자인하고 시뮬레이션을 할 수 있도록 해주는 지능형 가상현실 인터페이스를 제작하고 있습니다. 저희 소프트웨어는 직접 조작하는 가상현실 인터페이스와 클라우드 컴퓨팅의 통합을 통해 생명과학, 재료과학, 나노엔지니어링 분야에서의 연구와 개발을 지원하고 있습니다.</span>
-        	<span v-else>
+          <span v-else-if=" language === 'es' ">El equipo de Nanome construye interfaces inteligentes de realidad virtual que permiten a los científicos e ingenieros colaborar, diseñar y simular con precisión a nanoescala.
+            <br/><br/>Nuestro paquete de software ampliamente utilizado incluye código abierto <a href="http://calcflow.io/" target="_blank">Calcflow</a>, el conjunto de herramientas de matemáticas VR líder de la industria, y <a href="http://store.steampowered.com/app/493430/nanoone/" target="_blank">nano-one</a> una interfaz VR para el diseño y la simulación a nanoescala.</span>
+          <span v-else>
             The Nanome team builds intelligent virtual reality interfaces that enable scientists and engineers to collaborate, design and simulate with nanoscale precision.
-            <br/><br/>Our widely used software suite includes open source <a href="http://calcflow.io/" target="_blank">Calcflow</a>, the industry-leading VR mathematics toolkit, and <a href="http://store.steampowered.com/app/493430/nanoone/" target="_blank">nano-one</a>, a VR interface for nanoscale design and simulation.
+            <br/><br/>Our widely used software suite includes open source <a href="http://calcflow.io/" target="_blank">Calcflow</a>, the industry-leading VR mathematics toolkit, and <a href="http://store.steampowered.com/app/493430/nanoone/" target="_blank">nano-one</a>, una interfaz VR para el diseño y la simulación a nanoescala.
           </span>
         </div>
       </div>
       <div class="nanome__logos">
         <div class="token-sale__video-launcher content-container--medium">
           <iframe class="nanome-products-video-yt"
-            width="560" height="315"
+            width="480" height="270"
             :src="selectedLanguage" frameborder="0"
             allowfullscreen
           >
@@ -55,9 +58,22 @@
       </div>
     </div>
     <div class="content-container--medium nanome-sub text-align-center">
-      <h3 class="text-color--matryx-dark-grey">To advance human knowledge, scientific cooperations and technology, Nanome introduces
-        Matryx: A Blockchain powered collaboration platform for VR based research</span>
+      <h3 class="text--center text-color--matryx-dark-grey">
+        <span v-if=" language === 'ru' ">Для продвижения человеческих знаний, научного сотрудничества и технологий, Nanome вводит
+           Matryx: платформа совместной работы Blockchain для исследований на основе VR</span>
+        <span v-else-if=" language === 'ch' ">为了推进人类知识、科研合作和技术，Nanome推出Matryx平台：一个基于区块链技术的虚拟现实研究平台</span>
+        <span v-else-if=" language === 'ge' ">Um menschliches Wissen, wissenschaftliche Kooperationen und Technologie voranzutreiben, stellt Nanome
+           Matryx: Eine Blockchain-basierte Kollaborationsplattform für die VR-basierte Forschung</span>
+        <span v-else-if=" language === 'ko' ">Nanome은 인간 지식, 연구 협력 및 기술을 발전시키기 위해 블록 체인 기술을 기반으로하는 가상 현실 연구 플랫폼 인 Matryx 플랫폼을 발표했습니다.</span>
+        <span v-else-if=" language === 'ja' ">人間の知識、科学技術協力、技術を進歩させるために、Matryx：VRをベースとした研究のためのブロックチェインを利用したコラボレーションプラットフォーム</span>
+        <span v-else-if=" language === 'es' ">Para avanzar en el conocimiento humano, las cooperaciones científicas y la tecnología, Nanome presenta Matryx: una plataforma de colaboración impulsada por Blockchain para la investigación basada en realidad virtual</span>
+        <span v-else>To advance human knowledge, scientific cooperations and technology, Nanome introduces
+          Matryx: A Blockchain powered collaboration platform for VR based research</span>
       </h3>
+
+      <!-- <h3 class="text-color--matryx-dark-grey">To advance human knowledge, scientific cooperations and technology, Nanome introduces
+        Matryx: A Blockchain powered collaboration platform for VR based research</span>
+      </h3> -->
     </div>
   </section>
 </template>
@@ -79,7 +95,8 @@ export default {
     return {
       Video,
       VideoLinks: {
-        English: 'https://www.youtube.com/embed/gVtHlbRuD0w?rel=0&amp;showinfo=0'
+        English: 'https://giphy.com/embed/xT9Igs9rNVbdsfbNmg',
+        Chinese: 'https://giphy.com/embed/xT9Igs9rNVbdsfbNmg'
       }
     }
   }
@@ -119,8 +136,8 @@ iframe{
   max-width: 800px;
 
  &__title {
-    font-size: 30px;
-    line-height: 46px;
+    font-size: 25px;
+    line-height: 30px;
   }
 
  &__text {
@@ -156,15 +173,15 @@ iframe{
 }
 
 /*----- MEDIA QUERIES -----*/
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1000px) {
   .nanome {
     flex-wrap: wrap;
   }
   iframe{
-    width: 450px !important;
+    width: 400px !important;
     position: relative;
     z-index: 1;
-    margin-left: 0px;
+    margin-left: -25px;
   }
   .nanome__info {
     padding: 20px 0;

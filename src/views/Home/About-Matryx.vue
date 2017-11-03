@@ -61,7 +61,7 @@ export default {
 }
 
 .MatryxLogo img{
-  max-width: 500px;
+  max-width: 400px;
 }
 
 .content-container{
